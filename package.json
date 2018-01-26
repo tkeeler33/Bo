@@ -1,0 +1,23 @@
+{
+  "name": "bo",
+  "version": "1.0.0",
+  "description": "Bo Slack Bot",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkeeler33/Bo.git"
+  },
+  "author": "Tim Keeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkeeler33/Bo/issues"
+  },
+  "homepage": "https://github.com/tkeeler33/Bo#readme",
+  "dependencies": {
+    "@slack/client": "^3.15.0"
+  }
+}
