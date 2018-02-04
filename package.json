@@ -4,7 +4,7 @@
   "description": "Bo Slack Bot",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "if [[ $NODE_ENV == 'development' ]]; then nodemon app.js; else node app.js; fi",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/tkeeler33/Bo#readme",
   "dependencies": {
-    "botkit": "^0.6.9"
+    "botkit": "^0.6.9",
+    "flickr-sdk": "^3.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
   }
 }
