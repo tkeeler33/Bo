@@ -1,0 +1,27 @@
+{
+  "name": "bo",
+  "version": "1.0.0",
+  "description": "Bo Slack Bot",
+  "main": "app.js",
+  "scripts": {
+    "start": "if [[ $NODE_ENV == 'development' ]]; then nodemon app.js; else node app.js; fi",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkeeler33/Bo.git"
+  },
+  "author": "Tim Keeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkeeler33/Bo/issues"
+  },
+  "homepage": "https://github.com/tkeeler33/Bo#readme",
+  "dependencies": {
+    "botkit": "^0.6.9",
+    "flickr-sdk": "^3.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}
