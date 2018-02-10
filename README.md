@@ -10,11 +10,24 @@ Bo the Almighty Slack Bot!
 git clone https://github.com/tkeeler33/Bo.git
 ```
 
-#### Set your Slack API key
-Configure your Slack API key using environment variables:
+#### Set your environment variables & API keys
+Configure Bo using the following environment variables:
 ```
-export SLACK_API_TOKEN=[Bot API Token]
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=
+
+SLACK_API_TOKEN=
+SLACK_ADMIN_CHANNEL=
+
+FLICKR_API_KEY=
+FLICKR_API_SECRET=
+FLICKR_DEFAULT_ALBUM=
+FLICKR_OAUTH_TOKEN=
+FLICKR_OAUTH_TOKEN_SECRET=
+
 ```
+*Note*: AWS keys only needed if deploying with coldbrew
 
 #### Start the bot!
 ```
@@ -22,15 +35,12 @@ npm start
 ```
 
 ## TODO:
-- Auto-join public channels
-- Retrieve channel history on join (& track timestamps)
-- Fetch messages and parse
-- Fetch files (images & videos) and parse
-	- Integrate w/Google Photos and/or other sources
-- Figure out a best place to store messages. Options:
-	- NoSQL DB
-	- S3
-	- ElasticSearch
-- Lots more to do!
+- [ ] Update this README.md
+- [ ] Add better logging (ie Bunyan)
+- [ ] Update the channel & user lists on new users and channels
+- [ ] Add native .env support
+- [x] Fetch files (images & videos) and parse
+	- Integrated with Flickr albums!
+- [ ] Add fun stuff!
 
 
